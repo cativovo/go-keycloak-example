@@ -1,0 +1,9 @@
+services:
+  keycloak:
+    image: "keycloak/keycloak:26.0"
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+    command: start-dev
+    ports:
+      - 8000:8080
